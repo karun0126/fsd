@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header{
     text-align: center;
     background-color: cadetblue;
@@ -11,4 +12,19 @@ header{
     border: 2px solid black;
     text-align: center;
     padding: 10px;
+=======
+header{
+    text-align: center;
+    background-color: cadetblue;
+}
+#prod-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+}
+#prod-container div{
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+>>>>>>> upstream/main
 }

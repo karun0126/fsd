@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const myPromise = new Promise((resolve, reject) => {
     let age = 17;
     if (age >= 18) {
@@ -20,3 +21,27 @@ checkVoteEligiblity();
 // .then((msg) => console.log(msg))
 // .catch((error) => console.log(error))
 
+=======
+const myPromise = new Promise((resolve, reject) => {
+    let age = 17;
+    if (age >= 18) {
+        resolve("Eligible for vote...");
+    } else {
+        reject("Not Eligible for vote...");
+    }
+})
+const checkVoteEligiblity = async () => {
+    try {
+        const msg = await myPromise;
+        console.log(msg);
+    } catch (error) {
+        console.log(error);
+    }
+}
+checkVoteEligiblity();
+
+// myPromise
+// .then((msg) => console.log(msg))
+// .catch((error) => console.log(error))
+
+>>>>>>> upstream/main
